@@ -7,9 +7,7 @@
   "license": "MIT",
   "scripts": {
     "develop": "webpack-cli serve --mode=development --env development --open --hot",
-    "build": "webpack --mode=production --env production --progress",
-    "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
-    "lint:fix": "eslint './src/**/*.{ts,tsx,js,jsx}' --fix"
+    "build": "webpack --mode=production --env production --progress"
   },
   "devDependencies": {
     "@types/node": "16.18.23",
@@ -17,15 +15,6 @@
     "@types/react-dom": "18.0.11",
     "@types/webpack": "5.28.1",
     "@types/webpack-dev-server": "4.7.1",
-    "@typescript-eslint/eslint-plugin": "5.58.0",
-    "@typescript-eslint/parser": "5.58.0",
-    "eslint": "8.38.0",
-    "eslint-config-prettier": "8.8.0",
-    "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-react": "7.32.2",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-webpack-plugin": "3.2.0",
     "fork-ts-checker-webpack-plugin": "7.3.0",
     "html-webpack-plugin": "5.5.0",
     "prettier": "2.8.7",
@@ -38,7 +27,10 @@
     "webpack-dev-server": "4.13.2"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.10.0"
   }
 }
